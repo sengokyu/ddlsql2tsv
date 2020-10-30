@@ -83,8 +83,6 @@ def main(argv):
 
         _, par = statement.token_next_by(i=sqlparse.sql.Parenthesis)
 
-        print(statement)
-
         columns = extract_definitions(par)
 
         # for column in columns:
